@@ -11,7 +11,7 @@ export default function AuthProvider({
       domain="dev-emy5488k5kw8za0s.us.auth0.com"
       clientId="gEM9GBpZ8U6IKFycRfvEQkRPDSgOOXp0"
       authorizationParams={{
-        redirect_uri: "http://localhost:3000",
+        redirect_uri: process.env.NEXT_PUBLIC_API_URL,
       }}
     >
       {children}
